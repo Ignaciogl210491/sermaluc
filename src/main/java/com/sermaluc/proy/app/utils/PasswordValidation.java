@@ -20,7 +20,8 @@ public class PasswordValidation {
     private String customRegex;
 
     public boolean isValidPassword(String password) throws UserException {
-        Pattern pattern = Pattern.compile("((?=.*\\d).{8,20})");
+        //Pattern pattern = Pattern.compile("((?=.*\\d).{8,20})");
+        Pattern pattern = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*.,;?&])[A-Za-z\\d@$!%*.,;?&]{8,}$");
         Matcher matcher = pattern.matcher(password);
         if(!matcher.matches()) {
             throw new UserException( HttpStatus.CONFLICT,"Password invalido");
