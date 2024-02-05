@@ -10,4 +10,10 @@
 6. Desde swagger:
    http://localhost:8082/swagger-ui/index.html#/
 
+7. Diagrama de Solución
    ![image](https://github.com/Ignaciogl210491/sermaluc/assets/126305939/e07307e2-2d39-42c7-abb6-7e9a7fe296df)
+
+8. Diagrama de Flujo
+   [Uploading diagrama de flujo.html…]()
+
+9. 
